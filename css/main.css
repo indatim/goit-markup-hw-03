@@ -58,7 +58,7 @@ body {
 
 /* Контейнер */
 .container {
-    width: 1170px;
+    width: 1200px;
     
     padding-left: 15px;
     padding-right: 15px;
@@ -266,7 +266,6 @@ body {
 
 .feature {
     display: flex;
-    align-items: center;
     margin-bottom: 94px;
 }
 
