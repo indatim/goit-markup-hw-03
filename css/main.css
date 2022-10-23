@@ -9,7 +9,8 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --primary-white-color: #FFFFFF;  
+    --primary-white-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
 }
 
 html {
@@ -17,8 +18,8 @@ html {
 }
 
 *,
-*::before,
-*::after, {
+*::before;
+*::after; {
     box-sizing: inherit;
 }
 
@@ -45,6 +46,14 @@ body {
     clip-path: inset(50%);
     margin: -1px;
   } 
+
+  .ul {
+    padding-inline-start: 0;
+}
+
+.list {
+    list-style: none;
+}
 
 /* Контейнер */
 .container {
@@ -175,7 +184,6 @@ body {
     text-transform: uppercase;
 
     margin-bottom: 94px;
-    outline: 2px solid tomato;
 }
 
 .hero-title {
@@ -245,6 +253,10 @@ body {
     color: var(--primary-text-color);
 }
 
+.section-grey {
+    background-color: var(--secondary-bg-color);
+}
+
 /* Особливості/Features */
 
 /* .feature-headtitle {
@@ -255,7 +267,6 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 94px;
-    outline: 2px solid tomato;
 }
 
 .feature-list {
@@ -268,7 +279,6 @@ body {
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    outline: 2px solid tomato;
 }
 
 .feature-title {
@@ -280,7 +290,6 @@ body {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10;
-    outline: 2px solid tomato;
 }
 
 .feature-text {
@@ -290,7 +299,6 @@ body {
     letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 0;
-    outline: 2px solid tomato;
 }
 
 .feature .item + .item {
@@ -299,16 +307,44 @@ body {
 
 /* Чим ми займаємось/Work */
 
+.worklist {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 94px;
+}
+
 .worklist-title {
+    display: block;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 /* Наша команда/Family */
+
+.family {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.family .card {
+    align-items: center;
+    background-color: var(--primary-white-color);
+    margin-bottom: 94px;
+}
+
+.family .item + .item {
+    margin-left: 30px;
+}
+
+.family .photo {
+    margin-bottom: 30px;
+}
 
 .family-title {
     color: var(--title-text-color);
@@ -317,22 +353,25 @@ body {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-top: 94px;
 }
 
-.family-member {
+.family-name {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
-.family-name {
+.family-member {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
 
 /* Портфоліо/Portfolio */
@@ -388,8 +427,4 @@ body {
 .footer-nav .link:hover,
 .footer-nav .link:focus {
     color: var(--accent-color);
-}
-
-.list {
-    list-style: none;
 }
