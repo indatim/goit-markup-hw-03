@@ -90,6 +90,7 @@ body {
 
 .logofooter {
     color: #FFFFFF;
+    display: inline-block;
     
     font-family: Raleway;
     font-weight: 700;
@@ -99,6 +100,9 @@ body {
     letter-spacing: 0.03em;
     
     text-decoration: none;
+
+    padding-top: 60px;
+    margin-bottom: 20px;
 }
 
 .logoweb {
@@ -168,6 +172,10 @@ body {
 .site-nav .link:focus,
 .nav-contacts .link:hover,
 .nav-contacts .link:focus {
+    color: var(--accent-color);
+}
+
+.link.current {
     color: var(--accent-color);
 }
 
@@ -246,6 +254,12 @@ body {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    padding: 6px 22px;
+    min-width: 73px;
+    border: 0 solid;
+    border-color: var(--accent-color);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250)
 }
 
 /* Секція */
@@ -336,6 +350,8 @@ body {
     align-items: center;
     background-color: var(--primary-white-color);
     margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .family .item + .item {
@@ -376,12 +392,40 @@ body {
 
 /* Портфоліо/Portfolio */
 
+.portfolio {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-btn {
+    margin-bottom: 30px;
+}
+
+.portfolio-btn .item + .item {
+    margin-left: 8px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 94px;
+}
+
+.portfolio-list .card {
+    align-items: center;
+    background-color: var(--primary-white-color);
+    border: 1px hidden #EEEEEE;
+}
+
 .portfolio-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2px;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .portfolio-text {
@@ -391,6 +435,8 @@ body {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .portfolio-link {
@@ -400,7 +446,7 @@ body {
 /* Адреса/Address */
 .address {
     text-decoration: none;
-    font-style: normal;
+    font-style: normal; 
 }
 
 .address-text {
@@ -420,6 +466,11 @@ body {
 }
 
 /* Футер/Footer */
+.footer-nav {
+    padding-bottom: 60px;
+    margin: 0;
+}
+
 .footer-nav .link {
     text-decoration: none;
 }
