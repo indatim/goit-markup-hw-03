@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
@@ -42,9 +42,9 @@
         <button type="button" class="button button-hero">Замовити послугу</button>
       </section>
       <!--Cекція Особливості-->
-      <section class="container">
-        <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="feature ul list">
+      <section class="section">
+        <div class="container"><h2 class="visually-hidden">Наші переваги</h2>
+        <ul class="feature list">
           <li class="item">
             <h3 class="feature-title">Увага до деталей</h3>
             <p class="feature-text">
@@ -72,12 +72,12 @@
               завдань.
             </p>
           </li>
-        </ul>
+        </ul></div>
       </section>
       <!--Чим ми займаємося-->
-      <section class="container">
-        </div><h2 class="worklist-title">Чим ми займаємося</h2>
-        <ul class="worklist ul list">
+      <section class="worklist-section">
+        <div class="container"><h2 class="worklist-title">Чим ми займаємося</h2>
+        <ul class="worklist list">
           <li>
             <img src="./images/box1.jpg" width="370" alt="box1">
           </li>
@@ -87,52 +87,52 @@
           <li>
             <img src="./images/box3.jpg" width="370" alt="box3">
           </li>
-        </ul>
+        </ul></div>
       </section>
       <!--Наша команда-->
       <section class="section-grey">
-        <h2 class="family-title">Наша команда</h2>
-        <div class="container"><ul class="family ul list">
+        <div class="container"><h2 class="family-title">Наша команда</h2>
+        <ul class="family list">
           <li class="card item">
             <img class="photo"
               src="./images/ihor.jpg"
               width="270"
               alt="Фото першого співробітника">
-            <h3 class="family-name">Ігор Дем'яненко</h3>
-            <p class="family-member">Product Designer</p>
+            <div class="team"><h3 class="family-name">Ігор Дем'яненко</h3>
+            <p class="family-jobtitle">Product Designer</p></div>
           </li>
           <li class="card item">
             <img class="photo"
               src="./images/olha.jpg"
               width="270"
               alt="Фото другого співробітника">
-            <h3 class="family-name">Ольга Рєпіна</h3>
-            <p class="family-member">Frontend Developer</p>
+            <div class="team"><h3 class="family-name">Ольга Рєпіна</h3>
+            <p class="family-jobtitle">Frontend Developer</p></div>
           </li>
           <li class="card item">
             <img class="photo"
               src="./images/mykola.jpg"
               width="270"
               alt="Фото третього співробітника">
-            <h3 class="family-name">Микола Тарасов</h3>
-            <p class="family-member">Marketing</p>
+            <div class="team"><h3 class="family-name">Микола Тарасов</h3>
+            <p class="family-jobtitle">Marketing</p></div>
           </li>
           <li class="card item">
             <img class="photo"
               src="./images/mykhailo.jpg"
               width="270"
               alt="Фото четвертого співробітника">
-            <h3 class="family-name">Михайло Єрмаков</h3>
-            <p class="family-member">UI Designer</p>
+            <div class="team"><h3 class="family-name">Михайло Єрмаков</h3>
+            <p class="family-jobtitle">UI Designer</p></div>
           </li>
         </ul></div>
       </section>
     </main>
     <!--Футер сайту-->
-    <footer class="background">
+    <footer class="footer">
       <div class="container"><a href="./index.html" class="address logofooter"><span class="logoweb">Web</span>Studio</a>
       <address>
-        <ul class="footer-nav ul list">
+        <ul class="footer-nav list">
           <li>
             <a
               href="https://goo.gl/maps/ZicWZSvamPS7MqvVA"
@@ -143,10 +143,10 @@
             >
           </li>
           <li>
-            <a href="mailto:info@devstudio.com" class="address-link link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="address-mail link">info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="address-link link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="address-tel link">+38 096 111 11 11</a>
           </li>
         </ul>
       </address></div>
